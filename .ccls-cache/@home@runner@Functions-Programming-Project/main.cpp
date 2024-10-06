@@ -1,4 +1,5 @@
   #include <iostream>
+#include <iomanip>
   using namespace std; 
 
 // Get current price, price one year ago, price two years ago
@@ -22,6 +23,7 @@ void calculateInflations(double currentPrice, double priceOneYearAgo, double pri
 
 // Function to output the results and trend
 void outputResults(double inflationRate1, double inflationRate2) {
+    cout << fixed << setprecision(2);
     cout << "Inflation rate for the last year: " << inflationRate1 << "%" << endl;
     cout << "Inflation rate for the current year: " << inflationRate2 << "%" << endl;
 
